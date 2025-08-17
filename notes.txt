@@ -1,0 +1,62 @@
+Matplotlib notes:
+----------------
+
+Here I have used below tutorial for learning matplotlib
+
+Link:
+https://www.youtube.com/watch?v=qqwf4Vuj8oM&list=PLeo1K3hjS3uu4Lr8_kro2AqaO6CFYgKOl&index=2
+
+
+
+
+Matplotlib Tutorial 1 - Introduction and Installation:
+------------------------------------------------------
+What is matplotlib:
+This the data virtualization tool.
+This will show the data in the format of any 2D format like graph, chart and many more format.
+This is one of the python library
+
+Use below command to install matplot
+
+pip install matplotlib
+
+//This can also comes along with anaconda. 
+If we are already using alaconda, use below command to list the installed library and check whether matplotlib was already installed or not
+
+
+We can use it in any this in any of the python project.
+We can see the results in jupyter noteboook or IDE like pycharm, vscode etc
+
+
+Why we need this.
+It is always good to see the data in the image.
+Human can easily understand and faster when seeing the image than the text
+
+
+Below is the portal for matplotlib:
+https://matplotlib.org/
+We can refer this for more details
+
+
+
+pyplot is one of the widely used data virtualization in matplotlib
+https://matplotlib.org/stable/tutorials/pyplot.html
+This link will give more details about pyplot and how we can use this
+
+
+
+
+
+
+
+
+
+----
+
+
+Notes:
+----
+
+
+
+------------
