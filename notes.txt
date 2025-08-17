@@ -26,6 +26,8 @@ If we are already using alaconda, use below command to list the installed librar
 
 We can use it in any this in any of the python project.
 We can see the results in jupyter noteboook or IDE like pycharm, vscode etc
+If we are using jupyter notebook use below line to show the virtualization 
+%matplotlib inline
 
 
 Why we need this.
@@ -41,13 +43,42 @@ We can refer this for more details
 
 pyplot is one of the widely used data virtualization in matplotlib
 https://matplotlib.org/stable/tutorials/pyplot.html
+https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html
 This link will give more details about pyplot and how we can use this
 
 
+Below is one of simple example
+
+import matplotlib.pyplot as plt
+%matplotlib inline               # this is required only on jupyter
+x = [1, 2, 3, 4, 5, 6, 7]
+y = [41, 40, 42, 38, 41, 39, 41]
+plt.plot(x,y)    # This is show the line graph of x and y 
 
 
+Below is along with color and line width
+plt.plot(x,y,color='red', linewidth=4 )   # this is the same with color and line width
 
+Below is along with color, linewidth, marker, linestyle
+plt.plot(x,y,color='red', linewidth=1, marker='o', linestyle='dotted')
 
+To add title, we can use
+plt.title = 'giveTitleHere'
+
+To add x label 
+plt.xlabel = 'giveXLabelHere'
+
+To add y label
+plt.ylabel = 'giveYLabelHere'
+
+Below is the example along with title and labels
+plt.xlabel = 'Day'
+plt.ylabel = 'Temperature'
+plt.title = "Weather of the day"
+plt.plot(x,y,color='green', linewidth=2, marker='+', linestyle='dashed')
+
+Below link has more details about pyplot and how to use etc
+https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html
 
 
 
