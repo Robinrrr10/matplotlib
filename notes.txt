@@ -153,7 +153,7 @@ plt.title('giveTitleOfGraph')
 plt.xabel('GiveXLabelHere')
 plt.ylabel('GiveYLabelHere')
 
-
+# When we are giving multiple plot lines as like below 3 lines, this will show all line graphs in same graph
 plt.plot(x, y_avg, label='Avg')
 plt.plot(x, y_min, label='Min')
 plt.plot(y, y_max, label='Max')
