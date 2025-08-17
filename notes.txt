@@ -139,6 +139,44 @@ plt.plot(x, y, color='blue', alpha=0.2)
 Refer all details in below
 https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html
 
+---------------------------
+
+Matplotlib Tutorial 3 - Axes labels, Legend, Grid
+---------------------------------------------------
+Here we can see how we can give title, name for x axis, y axis.
+Here we can also see how we can have mulitple lines in same graph
+Here we can also see how we can give names for each lines
+Here we can also see how we can give the grid graph lines
+
+
+plt.title('giveTitleOfGraph')
+plt.xabel('GiveXLabelHere')
+plt.ylabel('GiveYLabelHere')
+
+
+plt.plot(x, y_avg, label='Avg')
+plt.plot(x, y_min, label='Min')
+plt.plot(y, y_max, label='Max')
+plt.legend()      #This is to show the each line label
+
+plt.legend(loc='upper right')   # To show in given location
+
+plt.legend(loc='best')          # This will show at the best fit location. Mostly where we have more spaces
+
+plt.legend(loc='best', shadow=True)    # To show the shadow of the box
+
+plt.legend(loc='best', shadow=True, fontsize='small')     # fontsize is to show the line label in given font size
+
+plt.grid()               # To show the grid graph lines
+
+-----------------------------
+
+
+
+
+
+
+
 
 
 
