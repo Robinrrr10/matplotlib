@@ -85,6 +85,68 @@ https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html
 ----
 
 
+
+
+Matplotlib Tutorial 2 - format strings in plot function
+------------------------------------------------------
+Here we can see format function and some attributes
+Format string is the short way to give the attributes to plotting
+
+We can use different format string to give the color, marker, linestyle and other.
+Eg:
+g+ means green with + marker
+r*-- means red with start marker with dotted lines
+
+We can give like below
+plt.plot(x,y,'g+')
+
+plt.plot(x,y, 'r*--')
+
+We can give in below. But order does not matter. It will string work
+'[marker][line][color]'
+
+'+--r'    # + marker   -- line   red color
+
+There are format string. Please refer on below link for more details
+https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html
+
+
+
+We can also given the attribute name and value instead of format string
+color    # color we can give in string or we can give in hexa value
+marker
+linestyle
+markersize
+
+Eg:
+plt.plot(x,y, color='red', marker='*', linestyle='dotted', markersize=2)
+
+
+plt.plot(x,y, color='#562384', marker='*', linestyle='dotted', markersize=5)
+
+For more details refer below
+https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html
+
+alpha:
+alpha is to control the transparancy
+alpha=1 is the no transparancy 
+alpha=0.5 is half transperance
+alpha=0 mens is complete transparancy
+
+Eg:
+plt.plot(x, y, color='blue', alpha=0.2)
+
+Refer all details in below
+https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html
+
+
+
+
+
+
+---------------------------
+
+
 Notes:
 ----
 
