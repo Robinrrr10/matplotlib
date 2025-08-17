@@ -171,6 +171,43 @@ plt.grid()               # To show the grid graph lines
 
 -----------------------------
 
+Matplotlib Tutorial 4 - Bar Chart
+---------------------------------
+Here we can see how we can generate bar chart
+
+plt.bar(x,y) - This is the simple way to generate bar chart
+
+if one of the value has string, get number of each
+and then do ploting
+
+company = ['Google', 'Facebook', 'Amazon', 'Ebay']
+revenue = [89, 76, 102, 45]
+xpos = np.arrange(len(company))   //Getting numbers for each Eg: 0, 1, 2, 3
+
+plt.xticks(xpos, company)   //Mapping number with company again. So this will show the company name in graph
+plt.bar(xpos, revenue)
+
+To add more bar in same graph
+profit=[40, 30, 84, 30]
+plt.xticks(xpos, company)   //Mapping number with company again
+plt.bar(xpos, revenue)
+plt.bar(xpos, profit)
+//Above two will be in same bar
+
+
+
+//Below line is to have separate bar chart for both 
+plt.bar(xpos-0.2, revenue, width=0.5, label='Revenue') 
+plt.bar(xpos+0.2, profit, width=0.5, label='Profit')
+plt.legend()
+
+We have moved the position of with minus in one bar and plus in other bar
+With the width of 0.5
+
+
+
+
+-------------------------------------------
 
 
 
