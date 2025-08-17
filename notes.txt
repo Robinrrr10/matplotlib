@@ -196,14 +196,29 @@ plt.bar(xpos, profit)
 
 
 
-//Below line is to have separate bar chart for both 
-plt.bar(xpos-0.2, revenue, width=0.5, label='Revenue') 
+//Below line is to have separate bar chart for both. we adjusted by minus 0.2 and plus 0.2 and along width 0.5
+plt.bar(xpos-0.2, revenue, width=0.5, label='Revenue')  
 plt.bar(xpos+0.2, profit, width=0.5, label='Profit')
 plt.legend()
 
 We have moved the position of with minus in one bar and plus in other bar
 With the width of 0.5
 
+
+
+For horizontal bar chart, we need to use barh
+plt,barh(x, y)
+
+Below is the complete bar chat in horizontal for the same
+
+profit = [70, 62, 48, 72]
+ypos = np.arange(len(company))
+plt.yticks(ypos, company)
+plt.xlabel('Revenue/Profit Billion')
+plt.ylabel('Company')
+plt.barh(ypos-0.2, revenue, height=0.5, label='Revenue')      # instead of width, we have given height
+plt.barh(ypos+0.2, profit, height=0.5, label='Profit')
+plt.legend()
 
 
 
