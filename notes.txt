@@ -234,16 +234,16 @@ sugarValues = [94, 121, 97, 104, 118, 92, 87, 120, 94, 145, 85, 131, 109]
 plt.hist(sugarValues)   # By default it will plot on 10 different bars. We will call it as the bin
 
 We can specify number of bins
-plt.hist(sugarValues, bin=3)   # here it will create only 3 bar
+plt.hist(sugarValues, bins=3)   # here it will create only 3 bar
 
 We can specify range, by giving
-plt.hist(sugarValues, bin=[80, 100, 120, 150])    This will create 3 bars. 80 to 100 in one bar, 100 to 120 another bar, 120 to 150 another bar
+plt.hist(sugarValues, bins=[80, 100, 120, 150])    This will create 3 bars. 80 to 100 in one bar, 100 to 120 another bar, 120 to 150 another bar
 
-plt.hist(sugarValues, bin=3, rwidth=0.95)      # rwidth is to give space between bars.
+plt.hist(sugarValues, bins=3, rwidth=0.95)      # rwidth is to give space between bars.
 
-plt.hist(sugarValues, bin=[80, 100, 120, 150], rwidth=0.95, color='green')    # we can give color
+plt.hist(sugarValues, bins=[80, 100, 120, 150], rwidth=0.95, color='green')    # we can give color
 
-plt.hist(sugarValues, bin=[80, 100, 120, 150], rwidth=0.95, color='g', histtype='step')    # we can give color g for green and type as step to show steps like one
+plt.hist(sugarValues, bins=[80, 100, 120, 150], rwidth=0.95, color='g', histtype='step')    # we can give color g for green and type as step to show steps like one
 
 We can have multiple sets in same historgram
 sugar_values_men = [94, 121, 97, 104, 118, 92, 87, 120, 94, 145, 85, 131, 109]
@@ -253,12 +253,12 @@ sugar_values_women = [112, 89, 97, 104, 128, 132, 84, 90, 144, 95, 119]
 plt.xlabel('sugar level')
 plt.ylabel('Number of patients')
 plt.title('Sugar patients')
-plt.hist([sugar_values_men, sugar_values_women], bin=[80, 100, 120, 150], rwidth=0.95, color=['green', 'blue'], label=['men', 'women'])    # we can pass in the list
+plt.hist([sugar_values_men, sugar_values_women], bins=[80, 100, 120, 150], rwidth=0.95, color=['green', 'blue'], label=['men', 'women'])    # we can pass in the list
 plt.legend()
 
 
 If we wanted to show the same in horizontal, give orientation
-plt.hist([sugar_values_men, sugar_values_women], bin=[80, 100, 120, 150], rwidth=0.95, color=['green', 'blue'], label=['men', 'women'], orientati='horizontal')
+plt.hist([sugar_values_men, sugar_values_women], bins=[80, 100, 120, 150], rwidth=0.95, color=['green', 'blue'], label=['men', 'women'], orientati='horizontal')
 This will show in horizontal
 
 
