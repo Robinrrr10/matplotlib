@@ -220,7 +220,8 @@ plt.barh(ypos-0.2, revenue, height=0.5, label='Revenue')      # instead of width
 plt.barh(ypos+0.2, profit, height=0.5, label='Profit')
 plt.legend()
 
-
+Document link:
+https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.bar.html
 
 -------------------------------------------
 
@@ -263,6 +264,47 @@ This will show in horizontal
 
 
 
+Link of document:
+https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html
+
+
+
+-------------------------
+
+
+Matplotlib Tutorial 6 - Pie Chart
+--------------------------------
+Here we can see how we can create the pie chart
+Pie chart are more helpful when we wanted to see the percentage of usage in circular format
+
+expense = [1500, 700, 1200, 500, 600]
+expense_label = ['grocery', 'travel', 'rent', 'internet', 'electricity']
+plt.pie(expense, labels = expense_label)    # this is to create pie chat
+
+
+plt.axis('equal')            # this is for showing the circle in proper share. Without this it will show in oval shape
+plt.pie(expense, labels = expense_label, radius = 2)   # radius is to control the size/radius of the circle
+plt.show()   # This is to show the chart 
+
+plt.pie(expense, labels = expense_label, radius = 1.5, autopct = '%0.2f%%')   #autopct is show the % value. Here we can give how much decimal. 0.2f means 2 decimal. 0.1f means one decimal. 0.0f means no decimal
+
+
+plt.pie(expense, labels = expense_label, radius = 1.5, autopct = '%0.2f%%', shadow=True)  # To show the shadow
+
+plt.pie(expense, labels = expense_label, radius = 1.5, autopct = '%0.2f%%', explode=[0, 0.2, 0, 0, 0]) # explode is to make the peace separated from the actual circle like pizza piece separated. We need to give same number of values. 0 is the default that won't make any cut. Based on value, it will cut and show. We can give 0.2 or 0.5 or any value. Based on that it will show
+
+By default, it will start the value to show from first at the 0 angle and then it will go in anti-clockwise
+plt.pie(expense, labels = expense_label, radius = 1.5, autopct = '%0.2f%%', startangle=45)  #Here we can give start angle. Based on that degree it will start. Here I have given 45 degree. So it start at 45 degree and then goes in anti clockwise. We can give 180 degree or any degree etc
+
+Link of the document of pie chart
+https://matplotlib.org/stable/gallery/pie_and_polar_charts/pie_features.html
+
+------------
+
+
+
+
+
 
 
 
@@ -279,7 +321,7 @@ This will show in horizontal
 
 Notes:
 ----
-
+plt.show()   # This is to show the chart
 
 
 ------------
