@@ -6,6 +6,8 @@ Here I have used below tutorial for learning matplotlib
 Link:
 https://www.youtube.com/watch?v=qqwf4Vuj8oM&list=PLeo1K3hjS3uu4Lr8_kro2AqaO6CFYgKOl&index=2
 
+This tutorial has 7 tutorial videos
+
 
 
 
@@ -302,6 +304,27 @@ https://matplotlib.org/stable/gallery/pie_and_polar_charts/pie_features.html
 ------------
 
 
+Matplotlib Tutorial 7 - Save Chart To a File Using savefig
+-------------------------------------------------------------
+To save chat use below
+
+plt.savefig('filename.png')    # this will save the chart in current directory
+
+plt.savefig('c:/User/myfile.png')   # This is to save on specific directory
+
+plt.savefig('mychart.png', bbox_inches='tight')   # some image will be cropped in above. So we can use bbox_inches='tight'. This won't crop
+
+
+plt.savefig('mychart.png', bbox_inches='tight', pad_inches=2)   # this is to give some extra space(padding) in saving file
+
+plt.savefig('mychart.png', bbox_inches='tight', pad_inches=2, transparent=True)    # this will create background as transparent. So we can use this image in html or any background
+
+plt.savefig('filename.pdf')   # we can save in pdf also
+
+For more details, refer below link
+https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html
+
+------------------------------------------------------------
 
 
 
