@@ -346,5 +346,7 @@ Notes:
 ----
 plt.show()   # This is to show the chart
 
+plt.scatter(x, y)    # This will show only the dots as per x and y values
+
 
 ------------
